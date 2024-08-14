@@ -56,5 +56,4 @@ def converse():
         return jsonify({"error" : "Inavlid request body"}), 400
     
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
