@@ -5,7 +5,7 @@ import openai
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST"]}})
 
 load_dotenv() #loads the .env file
 
